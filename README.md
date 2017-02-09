@@ -1,6 +1,8 @@
 # localytics-helper
 Foundation for Emails Panini helper function for adding Localytics email template variables.
 
+## Note: this has been moved to https://github.com/davehoran/paninihelpers with other Panini helper files.
+
 Localytics (https://www.localytics.com/welcome/) has expanded their offerings to include email campaigns in addition to their in-app and push notifications for mobile apps. The system for emails uses the Liquid (http://shopify.github.io/liquid/) template engine for composing emails. However, if you are using the Foundation for Emails framework there is an issue. Both systems use the {{var}} format for variables. 
 
 If you attempt to include a Liquid template var, the Foundation for Emails compilier will attempt to process the code and error out. The end goal is to be able to include the variables so Localytics can dynamically add personalization data, but not have it interpreted by the Zurb Stack.This small JavaScript helper function will allow you to add variables into the Foundation for Emails page, but have it genertate a variable in the output file that is ready to consume by the Localytics template system.
